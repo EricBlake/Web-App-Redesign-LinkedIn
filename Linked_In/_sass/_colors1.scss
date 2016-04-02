@@ -1,0 +1,66 @@
+$primary-background: #112e51;
+$secondary-background: #f1f1f1;
+$button-color:#0071bc;
+
+
+$text-primary: #205493;
+$text-secondary: #ffffff;
+$text-tertiary: #aeb0b5;
+
+
+.wrapper{
+	.banner{
+		background-color: $primary-background;
+	
+
+		h1{
+			a{
+			color:$text-secondary;
+			}
+		}
+
+		.search_box{
+			background-color:$secondary-background;
+			
+			p{
+				color: $text-tertiary;
+			}
+		}
+	}
+
+
+	.row{
+
+		.col{
+
+			.navbar{
+				ul{
+
+					li{
+
+						background-color:#205493;
+						border: 1px solid #212121;
+
+						h2{
+							a{
+								color:$text-secondary;	
+
+
+							}
+						}
+
+					}
+
+
+				}
+
+
+
+
+			}	
+		}
+	}
+
+
+
+}

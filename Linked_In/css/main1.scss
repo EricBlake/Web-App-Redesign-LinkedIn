@@ -1,0 +1,166 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import 'type1',
+		'colors1';
+
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 2%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($bleezy){
+  width: ($bleezy * $ind-col-width) + ($gut-width * ($bleezy - 1));
+  float:left;
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+body{
+	margin: 0;
+}
+
+
+.wrapper{
+	overflow:hidden;
+
+	//TOP BANNER INCLUDING LOGO AND SEARCH BAR
+
+
+	.banner{
+		overflow:hidden;
+		margin: 0;
+		width:100%;
+
+		h1{
+			float:left;
+			
+
+			a{
+				text-decoration: none;
+
+
+			}
+		}
+	
+		.search_box{
+			float:right;
+			width:30%;
+			margin:1em;
+			margin-top:1.75em;
+
+			p{
+				text-align:right;
+				margin: .5em;
+			}
+		}
+	}
+
+
+	//END OF BANNER
+
+
+
+	//BEGGING OF NAVIGATION BAR
+
+	.row{
+
+
+		.col{
+
+			.navbar{
+				margin: 0;
+				box-sizing:border-box;
+				width: 100%;
+
+
+				ul{
+					list-style:none;
+					margin: 0 auto;
+					padding: 0;
+					overflow:hidden;
+
+					li{
+						width:49%;
+						float:left;
+						
+
+						h2{
+							a{
+								text-decoration: none;
+
+
+								
+							}
+						}
+
+					}
+
+
+				}
+
+
+
+
+			}	
+		}
+	}
+
+
+	//END OF NAVIGATION BAR
+
+
+
+
+
+}
+
+
+@media (min-width: 500px){
+  .col {
+    margin-bottom: 0;
+  }
+  .col-1 {
+    @include grid(1);
+  }
+
+  .col-2 {
+    @include grid(2.14);
+  }
+
+  .col-3 {
+    @include grid(3);
+  }
+
+  .col-4 {
+     @include grid(5);
+  }
+  
+  .col-5 {
+     @include grid(8);
+  }
+  .col-6 {
+     @include grid(6);
+  }
+  .col-7 {
+     @include grid(7.5);
+  }
+  .col-8 {
+     @include grid(8);
+  }
+  .col-9 {
+     @include grid(9);
+  }
+  .col-10 {
+     @include grid(10);
+  }
+  .col-11 {
+     @include grid(11);
+  }
+  .col-12 {
+     @include grid(15);
+  }
+}

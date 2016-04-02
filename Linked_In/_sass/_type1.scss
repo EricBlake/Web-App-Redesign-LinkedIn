@@ -1,0 +1,73 @@
+$heading-font:'Merriweather', serif;
+$paragraph-font: 'Source Sans Pro', sans-serif;
+
+
+body {
+	h1{
+		font-family: $heading-font;
+	}
+	p{
+		font-family: $paragraph-font;
+	}
+	a{
+		font-family: $paragraph-font;
+	}
+}
+
+
+.wrapper{
+	.banner{
+
+		h1{
+			font-size: 2.5em;
+			font-weight: 700;
+			line-height: 1.3em;
+
+			
+			a{
+			font-family: $heading-font;
+			padding:1em;
+			}
+		}
+
+		.search_box{
+			p{
+				font-family: $paragraph-font;
+				line-height: 1.3em;
+				font-size: 1.25em;
+				
+			}
+		}
+	}
+
+	.row{
+
+		.col{
+
+			.navbar{
+				ul{
+					list-style:none;
+
+					li{
+						h2{
+							a{
+								text-decoration: none;
+
+							}
+						}
+
+					}
+
+
+				}
+
+
+
+
+			}	
+		}
+	}
+
+
+
+}
