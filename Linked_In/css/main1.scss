@@ -27,7 +27,7 @@ body{
 .wrapper{
 	overflow:hidden;
 
-	//TOP BANNER INCLUDING LOGO AND SEARCH BAR
+	//------------------------------TOP BANNER INCLUDING LOGO AND SEARCH BAR
 
 
 	.banner{
@@ -37,10 +37,17 @@ body{
 
 		h1{
 			float:left;
+			background: url('https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_in_nav_retina_88x72.png');
+			background-size: cover no-repeat;
+			background-size: 65px;
+			background-repeat:no-repeat;
+			margin-left: 0.5em;
+
 			
 
 			a{
 				text-decoration: none;
+
 
 
 			}
@@ -60,11 +67,11 @@ body{
 	}
 
 
-	//END OF BANNER
+	//-----------------------------------------END OF BANNER
 
 
 
-	//BEGGING OF NAVIGATION BAR
+	//------------------------------------------BEGGING OF NAVIGATION BAR
 
 	.row{
 
@@ -72,29 +79,35 @@ body{
 		.col{
 
 			.navbar{
-				margin: 0;
+				margin: 0 auto;
 				box-sizing:border-box;
-				width: 100%;
+				
 
 
 				ul{
 					list-style:none;
 					margin: 0 auto;
 					padding: 0;
-					overflow:hidden;
+					overflow:auto;
+					box-sizing:border-box;
+
+					
 
 					li{
-						width:50%;
+						display: inline-block;
+						width: 50%;
 						float:left;
+						
+
 
 						
 
 						h2{
+							text-align: center;
+
 							a{
 								text-decoration: none;
-								margin-left: 1em;
-
-
+								
 								
 							}
 						}
@@ -109,10 +122,31 @@ body{
 
 			}	
 		}
+//-----------------------------------------END OF NAVIGATION BAR
+//-----------------------------------------PEOPLE YOU MAY KNOW
+		.people{
+			clear:both;
+
+			:nth-child(1){
+				display: none;
+			}
+		h3{
+			margin:1em;
+		}	
+		
+		}
+
 	}
 
 
-	//END OF NAVIGATION BAR
+	
+
+
+
+
+
+
+
 
 
 

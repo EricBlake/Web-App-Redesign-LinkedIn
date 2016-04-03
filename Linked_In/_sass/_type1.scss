@@ -2,31 +2,29 @@ $heading-font:'Merriweather', serif;
 $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
-body {
-	h1{
-		font-family: $heading-font;
-	}
-	p{
-		font-family: $paragraph-font;
-	}
-	a{
-		font-family: $paragraph-font;
-	}
-}
+
 
 
 .wrapper{
+
+			//---------------TOP BANNER--------------------//
+
+
 	.banner{
 
 		h1{
 			font-size: 2.5em;
 			font-weight: 700;
 			line-height: 1.3em;
+			
 
 			
 			a{
 			font-family: $heading-font;
 			padding:1em;
+
+
+
 			}
 		}
 
@@ -40,6 +38,9 @@ body {
 		}
 	}
 
+
+	//-------------------------------- NAV BAR------------------------------//
+
 	.row{
 
 		.col{
@@ -52,6 +53,7 @@ body {
 						h2{
 							a{
 								text-decoration: none;
+								font-family: $paragraph-font;
 
 							}
 						}
@@ -67,6 +69,9 @@ body {
 			}	
 		}
 	}
+
+
+	//--------------------------PEOPLE YOU MAY KNOW---------------------------//
 
 
 
