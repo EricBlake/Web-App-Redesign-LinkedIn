@@ -84,13 +84,15 @@ body{
 					overflow:hidden;
 
 					li{
-						width:49%;
+						width:50%;
 						float:left;
+
 						
 
 						h2{
 							a{
 								text-decoration: none;
+								margin-left: 1em;
 
 
 								
@@ -120,47 +122,5 @@ body{
 
 
 @media (min-width: 500px){
-  .col {
-    margin-bottom: 0;
-  }
-  .col-1 {
-    @include grid(1);
   }
 
-  .col-2 {
-    @include grid(2.14);
-  }
-
-  .col-3 {
-    @include grid(3);
-  }
-
-  .col-4 {
-     @include grid(5);
-  }
-  
-  .col-5 {
-     @include grid(8);
-  }
-  .col-6 {
-     @include grid(6);
-  }
-  .col-7 {
-     @include grid(7.5);
-  }
-  .col-8 {
-     @include grid(8);
-  }
-  .col-9 {
-     @include grid(9);
-  }
-  .col-10 {
-     @include grid(10);
-  }
-  .col-11 {
-     @include grid(11);
-  }
-  .col-12 {
-     @include grid(15);
-  }
-}
