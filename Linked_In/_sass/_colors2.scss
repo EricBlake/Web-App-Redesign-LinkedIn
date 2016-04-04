@@ -253,12 +253,13 @@ $base-color:#043f59;
 
 }/////-------------closing tag for news feed------//
 
-.footer{
+footer{
 	background-color:$primary-background;
 	ul{
 		li{
-			
+			a{
 			color:#ffffff;
+		}
 
 		}
 	}

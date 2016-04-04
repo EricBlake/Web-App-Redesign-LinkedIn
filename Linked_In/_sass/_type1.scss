@@ -207,13 +207,19 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 	margin: 0 auto;
 	padding: 2em;
 	ul{
+		width: 100%;
 		li{
-			width:100%;
-			
+			width: 100%;
 			list-style: none;
 			display: inline;
-			margin-left: 1.5em;
+			margin: 1.5em auto;
 			text-align: center;
+
+
+			a{
+				text-decoration: none;
+				margin:1em auto;
+			}
 		}
 	}
 }

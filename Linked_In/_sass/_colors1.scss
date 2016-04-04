@@ -257,8 +257,9 @@ $base-color:#212121;
 	background-color:$primary-background;
 	ul{
 		li{
-			
+			a{
 			color:#ffffff;
+		}
 
 		}
 	}
@@ -389,6 +390,22 @@ $base-color:#212121;
 							color:$base-color;
 							margin:1em;
 						}
+
+					}
+				
+				}	
+				.upgrade_button:hover{
+					background-color:#2e8540;
+					border: 1px solid $base-color;
+					background:contain;
+
+					h3{
+
+						a{
+							color:#fdb81e;
+							margin:1em;
+						}
+						
 					}
 				
 				}	

@@ -670,7 +670,16 @@ body{
 	}
 }/////-------------closing tag for news feed------//
 
+.footer{
+	ul{
+		
+		margin: 0 auto;
 
+		li{
+			margin: 0 auto;
+		}
+	}
+}
 
 
 }//----------------END MEDIA QUIRY TAG
@@ -727,7 +736,7 @@ body{
 
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 					margin-top: 0em;
 				}
@@ -750,7 +759,7 @@ body{
 
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}
@@ -775,7 +784,7 @@ body{
 				
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}
@@ -797,7 +806,7 @@ body{
 				
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}

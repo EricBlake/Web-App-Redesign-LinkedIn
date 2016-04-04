@@ -472,6 +472,15 @@ body{
 				margin-left:0.5em;
 				box-sizing:border-box;
 
+				h1{
+					
+						margin-bottom: 0em;
+					
+				}
+				h2{
+					margin-top: 0.2em;
+				}
+
 
 			}
 
@@ -686,6 +695,71 @@ body{
 
 
 //-----------------------------------------PEOPLE YOU MAY KNOW
+
+.nav_wrapper{
+	margin: 0 auto;
+	margin-top:1em;
+	overflow:hidden;
+	box-sizing:border-box;
+	min-width:600px;
+
+	.row{
+
+
+		.col.col-12{
+			overflow:hidden;
+			box-sizing:border-box;
+
+			.navbar{
+				margin: 0 auto;
+				display: inline-block;
+				width: 25%;
+				vertical-align: top;
+				margin-top:0.75em;
+			}
+
+		}
+	}
+}
+
+.user_profile{
+			overflow: hidden;
+			display: inline-block;
+			box-sizing:border-box;
+			margin: 0 auto;
+			width: 20%;
+			min-width: 20%;
+			margin-bottom: 1em;
+			text-align: top;
+
+			
+			
+			
+			.img_specs{
+				width:auto;
+				margin-left: 1em;
+				margin-right:0;
+				
+				overflow:hidden;
+				display: inline-block;
+				
+				
+			}
+				
+				.user_img{
+				
+				background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%2012.42.24%20PM.png');
+				background-repeat:no-repeat;
+				background-size:contain;
+				height:10em;
+				margin: 0em;
+
+				display: inline-block;
+
+			}
+		}
+
+
 .people{
 			clear:both;
 			overflow: hidden;
@@ -723,7 +797,7 @@ body{
 
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 					margin-top: 0em;
 				}
@@ -746,7 +820,7 @@ body{
 
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}
@@ -771,7 +845,7 @@ body{
 				
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}
@@ -793,7 +867,7 @@ body{
 				
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}
@@ -815,7 +889,7 @@ body{
 				
 				p{
 					text-align: center;
-					width: 60%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}
@@ -829,22 +903,61 @@ body{
 	margin: 1em auto;
 }
 
+//-----------------------------------NEWS FEED BEGIN------------------------------
+
+
 .newsfeed{
-	max-width:1000px;
-	margin:0 auto;
+	margin:1em;
+	
+	overflow:hidden;
 
-	.news_block{
-	margin: 0 auto;
-	width:50%;
+	.news_header{
+		margin:1em;
+		padding-bottom:1em;
+		float:right;
 	}
-}
-.footer{
-	ul{
-		max-width: 1000px;
-		margin: 0 auto;
 
+
+	.news_container{
+	
+		
+
+		.news_block{
+			width: 100%;
+			margin:1em;
+			
+
+			h4{
+				margin:0 auto;
+
+				a{
+					text-decoration: none;
+				}
+			}
+		}
+
+	
+	}
+}/////-------------closing tag for news feed------//
+.footer{
+	margin: 0 auto;
+	padding: 2em;
+	width:100%;
+	ul{
+		width: 100%;
 		li{
-			margin: 0 auto;
+			
+			list-style: none;
+			display: inline;
+			text-align: center;
+
+
+			a{
+
+				text-decoration: none;
+				margin:1.5em auto;
+
+			}
 		}
 	}
 }
