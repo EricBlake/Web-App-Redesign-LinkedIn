@@ -11,6 +11,8 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
 	.banner{
+		padding:0em;
+
 
 		h1{
 			font-size: 2.5em;
@@ -47,13 +49,15 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 			.navbar{
 				ul{
-					list-style:none;
+					
 
 					li{
 						h2{
+							font-size: 1.2em;
 							a{
 								text-decoration: none;
 								font-family: $paragraph-font;
+								
 
 							}
 						}
@@ -137,3 +141,178 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 		}
 
 }
+
+.newsfeed{
+	
+
+	.news_header{
+		
+	}
+
+
+	.news_container{
+		.news_block{
+			
+
+			h4{
+				font-size: 1.063em;
+				line-height: 1.3em;
+				font-weight: 700;
+				font-family: $heading-font;
+				
+			}
+			p{
+				font-size: 1.063em;
+				line-height: 1.5em;
+				font-weight: 400;
+				font-family: $paragraph-font;
+			}
+		}
+
+	}
+
+
+}/////-------------closing tag for news feed------//
+
+
+
+
+
+
+
+ //-----------------------------END OF NEWS FEED-------------------------------------
+
+
+
+
+
+
+
+//---------------------------------BREAKPOINT1---------------------------------------
+@media(min-width: 550px){
+		
+.col-8{
+	overflow:hidden;
+		
+		.user_profile{
+
+			
+			
+			
+			.img_specs{
+				p{
+					a{
+						text-decoration: none;
+						font-family: $paragraph-font;
+						line-height: 1em;
+
+					}
+				}
+				
+				
+			.user_img{
+
+				p{
+					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-family: $paragraph-font;
+					}
+				}
+					
+					
+			}
+			
+			}
+
+			.user_about{
+				margin-left: 0.5em;
+				h1{
+					a{
+						text-decoration: none;
+						font-family: $paragraph-font;
+						font-weight: 700;
+						line-height: 1.3em;
+					}
+				}
+				h2{
+					font-size: 1em;
+					font-family: $paragraph-font;
+					line-height: 1.3em;
+				}
+
+					p{
+						font-size: 1.063em;
+						line-height: 1.3em;
+						font-weight: 400;
+						font-family: $paragraph-font;
+					}
+					
+			}
+
+			.buttons{
+
+				
+				
+				.upgrade_button{
+					font-family: $paragraph-font;
+					font-weight: 700px;
+					text-decoration: none;
+
+					h3{
+
+						a{
+							font-family: $paragraph-font;
+							font-size: 1.250em;
+							text-align: center;
+							padding:0.2em;
+						}
+					}
+				
+				}	
+
+				.view_profile{
+					font-size: 1em;
+					text-decoration: none;
+					text-align: center;
+					padding:0.2em;
+					
+				}
+
+			}
+
+
+
+
+
+			}
+
+
+	}
+}
+
+//----------------------------------------END BREAK POINT 1
+
+
+
+
+
+
+
+
+
+//-----------------------------------------BEGIN BREAKPOINT 2
+
+@media(min-width: 1000px){
+
+
+
+
+
+}//---------------END MEDIA TAG
+
+//-----------------------------------------END BREAKPOINT 2
+
+
+
+

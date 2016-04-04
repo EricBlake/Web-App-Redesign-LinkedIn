@@ -12,6 +12,7 @@ $base-color:#212121;
 
 
 .wrapper{
+	background-color:$secondary-background;
 	.banner{
 		background-color: $primary-background;
 	
@@ -32,15 +33,16 @@ $base-color:#212121;
 	}
 
 //----------------------- NAVBAR----------------------------
-
+.nav_wrapper{
+	border-bottom: 1px solid $base-color;
 	.row{
 
 		.col{
 
 			.navbar{
-				border-bottom: 1px solid $base-color;
+				
 				ul{
-
+					
 					li{
 
 						background-color:$button-color;
@@ -69,16 +71,18 @@ $base-color:#212121;
 			}	
 		}
 	}
+}	
 //-----------------------------PEOPLE YOU MAY KNOW------------------------
 		.people{
 
 			border-bottom: 1px solid $base-color;
+			background-color:#dce4ef;
 
 			.people_headings{
 			
 				h3:first-of-type{
 					color: $button-color;
-					border: 1px solid $button-color;
+					
 					width: fit-content;
 					
 
@@ -86,16 +90,25 @@ $base-color:#212121;
 				
 				}
 				h3:nth-child(2){
-						background-color:$secondary-background;
+						
 						width: fit-content;
 
 					a{
 						text-decoration: none;
 						color:$base-color;
 						border: 1px solid $base-color;
-
-						
+						padding:0.2em;
+						background-color:$secondary-background;
 				}
+
+				a:hover{
+						
+						color:$text-secondary;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$button-color;
+				}
+
 					}
 			}
 
@@ -149,3 +162,250 @@ $base-color:#212121;
 //---------------------------------END PEOPLE YOU MAY KNOW---------------------
 
 }
+
+.newsfeed{
+	
+
+	.news_header{
+		h3{
+				a{
+						text-decoration: none;
+						color:$base-color;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$secondary-background;
+				}
+
+				a:hover{
+						
+						color:$text-secondary;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$button-color;
+				}
+			}
+	}
+
+
+	.news_container{
+		background-color:$secondary-background;
+		.news_block{
+
+			
+
+			h4{
+				color: $primary-background;
+				a{
+					color: $primary-background;
+
+				}
+				a:hover{
+					color:$button-color;
+				}
+				
+			}
+
+			p{
+				a{
+					color:$primary-background;
+
+				}
+				a:hover{
+					color:$section-headings;
+
+				}
+
+			}
+		}
+
+	}
+
+
+}/////-------------closing tag for news feed------//
+
+
+
+
+
+
+
+ //-----------------------------END OF NEWS FEED-------------------------------------
+
+
+ //----------------------------------BEGIN BREAKPOINT 1-------------------------//
+
+
+ @media(min-width: 550px){
+		.nav_wrapper{
+			border-bottom: 1px solid $base-color;
+			.row{
+
+				.col{
+
+					.navbar{
+						
+						ul{
+
+							border: 1px solid $base-color;
+							background-color:$button-color;
+
+							li{
+								border: 1px solid $base-color;
+								
+								
+
+								h2{
+
+									a{
+										color:$text-secondary;	
+
+
+									}
+								}
+
+							}
+							li:hover{
+								background-color:$text-primary;
+							}
+
+
+						}
+
+
+
+
+					}	
+				}
+			}
+		}	
+
+
+
+		.user_profile{
+
+			
+			
+			.img_specs{
+				
+				p{
+						a{
+						color: $primary-background;
+
+
+				}
+					
+					a:hover{
+					color:$button-color;
+				}
+					}
+
+				
+			.user_img{
+					
+					
+			}
+			
+			}
+
+			.user_about{
+				
+				
+				h1{
+					a{
+						color:$primary-background;
+						text-decoration: none;
+
+					}
+					a:hover{
+						color:$button-color;
+										}
+				}
+
+				h2{
+					color:$base-color;
+					a{
+						color: $primary-background;
+						text-decoration: none;
+
+				}
+					
+					a:hover{
+					color:$button-color;
+				}
+			}
+
+
+		}
+				.buttons{
+				
+				
+				.upgrade_button{
+					background-color:#fdb81e;
+					border: 1px solid $base-color;
+
+					h3{
+
+						a{
+							color:$base-color;
+						}
+					}
+				
+				}	
+
+				.view_profile{
+					
+					h3{
+						a{
+						text-decoration: none;
+						color:$base-color;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$secondary-background;
+				}
+
+				a:hover{
+						
+						color:$text-secondary;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$button-color;
+				}
+					}
+					
+				}
+
+			}
+
+
+	}
+ }
+
+
+//----------------------------------------END BREAK POINT 1
+
+
+
+
+
+
+
+
+
+//-----------------------------------------BEGIN BREAKPOINT 2
+
+@media(min-width: 1000px){
+
+
+
+
+
+}//---------------END MEDIA TAG
+
+//-----------------------------------------END BREAKPOINT 2
+
+
+
+
+
+
+
