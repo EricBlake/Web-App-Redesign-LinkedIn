@@ -57,7 +57,7 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 							a{
 								text-decoration: none;
 								font-family: $paragraph-font;
-								
+
 
 							}
 						}
@@ -93,6 +93,11 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				p{
 					font-size: 1.063em;
 					font-family: $paragraph-font;
+
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
 				}
 			}
 
@@ -103,6 +108,10 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				p{
 					font-size: 1.063em;
 					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
 				}
 			}
 
@@ -114,6 +123,10 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				p{
 					font-size: 1.063em;
 					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
 				}
 			}
 
@@ -125,6 +138,10 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				p{
 					font-size: 1.063em;
 					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
 				}
 			}
 
@@ -136,6 +153,10 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				p{
 					font-size: 1.063em;
 					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
 				}
 			}
 		}
@@ -182,7 +203,20 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
  //-----------------------------END OF NEWS FEED-------------------------------------
 
-
+.footer{
+	margin: 0 auto;
+	padding: 2em;
+	ul{
+		li{
+			width:100%;
+			
+			list-style: none;
+			display: inline;
+			margin-left: 1.5em;
+			text-align: center;
+		}
+	}
+}
 
 
 
@@ -204,7 +238,7 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 					a{
 						text-decoration: none;
 						font-family: $paragraph-font;
-						line-height: 1em;
+						line-height: 0em;
 
 					}
 				}
@@ -217,6 +251,7 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 					a{
 						text-decoration: none;
 						font-family: $paragraph-font;
+						line-height: 0.5em;
 					}
 				}
 					
@@ -228,17 +263,20 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 			.user_about{
 				margin-left: 0.5em;
 				h1{
+					margin-bottom: 0em;
 					a{
 						text-decoration: none;
 						font-family: $paragraph-font;
 						font-weight: 700;
-						line-height: 1.3em;
+						line-height: 1em;
 					}
 				}
 				h2{
 					font-size: 1em;
 					font-family: $paragraph-font;
 					line-height: 1.3em;
+					margin-top: 0.5em;
+
 				}
 
 					p{
@@ -266,6 +304,7 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 							font-size: 1.250em;
 							text-align: center;
 							padding:0.2em;
+							min-width:100%;
 						}
 					}
 				

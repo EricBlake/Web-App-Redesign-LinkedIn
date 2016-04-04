@@ -6,9 +6,855 @@
 		'colors2';
 
 
-.header-font {
-	color: $primary-color;
+
+
+$tot-width: 100%;
+$num-col: 12; 
+$gut-width: 2%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($bleezy){
+  width: ($bleezy * $ind-col-width) + ($gut-width * ($bleezy - 1));
+  float:left;
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-h1{
-	color: $primary-color;
+
+body{
+	margin: 0;
 }
+
+
+.wrapper{
+	overflow:hidden;
+
+	//------------------------------TOP BANNER INCLUDING LOGO AND SEARCH BAR
+
+
+	.banner{
+		overflow:hidden;
+		margin: 0;
+		width:100%;
+
+		h1{
+			float:left;
+			background: url('https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_in_nav_retina_88x72.png');
+			background-size: cover no-repeat;
+			background-size: 65px;
+			background-repeat:no-repeat;
+			margin-left: 0.5em;
+
+			
+
+			a{
+				text-decoration: none;
+
+
+
+			}
+		}
+	
+		.search_box{
+			float:right;
+			width:30%;
+			margin:1em;
+			margin-top:1.75em;
+
+			p{
+				text-align:right;
+				margin: .5em;
+			}
+		}
+	}
+}
+
+
+	//-----------------------------------------END OF BANNER
+
+
+
+	//------------------------------------------BEGGING OF NAVIGATION BAR
+
+	.row{
+
+
+		
+
+			.navbar{
+				margin: 0 auto;
+				box-sizing:border-box;
+				
+				
+
+
+				ul{
+					list-style:none;
+					margin: 0 auto;
+					padding: 0em;
+					overflow:auto;
+					box-sizing:border-box;
+
+					
+
+					li{
+						display: inline-block;
+						width:50%;
+						float:left;
+						
+
+
+						
+
+						h2{
+							text-align: center;
+
+							a{
+								text-decoration: none;
+
+								
+								
+							}
+						}
+
+					}
+
+
+				}
+
+			}	//--end of navbar tag//
+
+	
+
+
+		.user_profile{
+			overflow: hidden;
+			display:none;
+			
+			.img_specs{
+			.user_img{
+					float:left;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%2012.42.24%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+			}
+			}
+
+			.user_about{
+				float:left;
+
+			}
+
+
+		}
+
+
+
+	}//---end of row tag--//
+//-----------------------------------------END OF NAVIGATION BAR
+
+
+
+//-----------------------------------------PEOPLE YOU MAY KNOW
+.people{
+			clear:both;
+			overflow: hidden;
+			padding-bottom: 2em;
+
+			.people_headings{
+				margin:1em;
+				h3:first-child{
+					padding:0.2em;
+					display: none;
+					
+
+				}
+				h3:nth-child(2){
+					
+				}	
+
+			}
+
+			.profiles1{
+				width: 50%;
+				float:left;
+
+				.picture1{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.42.13%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 0em;
+				}
+			}
+
+			.profiles2{
+				width: 50%;
+				float:left;
+
+				.picture2{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.33.55%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+				
+			.profiles3{
+				
+				float:left;
+				display: none;
+				
+
+				.picture3{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.35.56%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+			.profiles4{
+				
+				float:left;
+				display: none;
+				
+
+				.picture4{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.40.51%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+			.profiles5{
+				
+				float:left;
+				display: none;
+
+				.picture5{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.43.49%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}	
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+}//--end of people tag//
+
+
+		//------------------------END PEOPLE YOU MAY KNOW------------------------
+
+ //-----------------------------------NEWS FEED BEGIN------------------------------
+
+
+.newsfeed{
+	margin:0 auto;
+
+	.news_header{
+		margin:1em;
+		padding-bottom:1em;
+	}
+
+
+	.news_container{
+		
+
+		.news_block{
+			margin:1em;
+
+			h4{
+				margin:0 auto;
+
+				a{
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+
+
+}/////-------------closing tag for news feed------//
+
+
+
+
+
+
+
+ //-----------------------------END OF NEWS FEED-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------BREAKPOINT 1--------------------------------------------
+
+
+
+
+@media(min-width: 550px){
+		
+//------------------------------------------BEGGING OF NAVIGATION BAR
+.nav_wrapper{
+	margin: 0 auto;
+	margin-top:1em;
+	overflow:hidden;
+	box-sizing:border-box;
+	min-width:600px;
+
+	.row{
+
+
+		.col.col-12{
+			overflow:hidden;
+			box-sizing:border-box;
+
+			.navbar{
+				margin: 0 auto;
+				display: inline-block;
+				width: 25%;
+				vertical-align: top;
+				margin-top:1.35em;
+				
+
+
+
+				
+				ul{
+					box-sizing:border-box;
+					margin-bottom:1em;
+
+					
+
+					li{
+						display: block;
+						float:none;
+						width: 100%;
+
+		
+
+						h2{
+							text-align:left;
+
+							a{
+								text-decoration: none;
+								margin-left:0.5em;
+								
+								
+							}
+						}
+
+					}
+
+
+				}
+
+			}	//--end of navbar tag//
+
+		}//end of col tag--//
+	
+		
+
+		.user_profile{
+			overflow: hidden;
+			display: inline-block;
+			box-sizing:border-box;
+			margin: 0 auto;
+			width: 20%;
+			min-width: 20%;
+			margin-bottom: 1em;
+			text-align: top;
+
+			
+			
+			
+			.img_specs{
+				width:auto;
+				margin-left: 1em;
+				margin-right:0;
+				
+				overflow:hidden;
+				display: inline-block;
+				
+				
+			}
+				
+				.user_img{
+				
+				background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%2012.42.24%20PM.png');
+				background-repeat:no-repeat;
+				background-size:contain;
+				height:10em;
+				margin: 0em;
+				margin-bottom: 1em;
+				display: inline-block;
+
+			}
+			.user_about{
+				width: auto;
+				margin-left:0;
+				display: inline-block;
+				margin-left:0.5em;
+				box-sizing:border-box;
+
+
+			}
+
+			
+
+
+		}
+
+		.buttons{
+				display: inline-block;
+				box-sizing:border-box;
+				overflow: hidden;
+				width: auto;
+			
+
+				
+				.upgrade_button{
+					float:right;
+				
+				
+
+					h3{
+						a{
+							text-decoration: none;
+						}
+					}
+				
+				}	
+
+				.view_profile{
+					clear:both;
+					text-decoration: none;
+					float:right;
+
+					h3{
+						a{
+							text-decoration: none;
+						}
+					}
+				}
+
+			}
+
+		
+
+
+
+	}//---end of row tag--//
+
+} ///-------------------------end of nav wrapper
+
+
+//-----------------------------------------END OF NAVIGATION BAR
+
+//-----------------------------------------PEOPLE YOU MAY KNOW
+.people{
+			clear:both;
+			overflow: hidden;
+			padding-bottom: 2em;
+
+			.people_headings{
+				margin:1em;
+				h3:first-child{
+					padding:0.2em;
+					display: inline-block;
+					
+					
+
+				}
+				h3:nth-child(2){
+					float:right;
+					
+				}	
+
+			}
+
+			.profiles1{
+				width:33%;
+				display: inline-block;
+
+				.picture1{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.42.13%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 0em;
+				}
+			}
+
+			.profiles2{
+				display: inline-block;
+				width: 33%;
+				
+
+				.picture2{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.33.55%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+				
+			.profiles3{
+				display: inline-block;
+				width: 33%;
+				
+				
+				
+
+				.picture3{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.35.56%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+			
+
+
+			
+
+}//--end of people tag//
+
+
+		//------------------------END PEOPLE YOU MAY KNOW------------------------
+
+
+//-----------------------------------NEWS FEED BEGIN------------------------------
+
+
+.newsfeed{
+	margin:1em;
+	
+	overflow:hidden;
+
+	.news_header{
+		margin:1em;
+		padding-bottom:1em;
+		float:right;
+	}
+
+
+	.news_container{
+		overflow: hidden;
+		box-sizing:border-box;
+
+		.news_block{
+			width: 70%;
+			margin:1em;
+			
+
+			h4{
+				margin:0 auto;
+
+				a{
+					text-decoration: none;
+				}
+			}
+		}
+
+	
+	}
+}/////-------------closing tag for news feed------//
+
+
+
+
+}//----------------END MEDIA QUIRY TAG
+//----------------------------------------END BREAK POINT 1
+
+
+
+
+
+
+
+
+
+//-----------------------------------------BEGIN BREAKPOINT 2
+
+@media(min-width: 1000px){
+
+
+//-----------------------------------------PEOPLE YOU MAY KNOW
+.people{
+			clear:both;
+			overflow: hidden;
+			padding-bottom: 2em;
+
+			.people_headings{
+				margin:1em;
+				h3:first-child{
+					padding:0.2em;
+					display: inline-block;
+					
+					
+
+				}
+				h3:nth-child(2){
+					float:right;
+					
+				}	
+
+			}
+
+			.profiles1{
+				width:20%;
+				display: inline-block;
+
+				.picture1{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.42.13%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 0em;
+				}
+			}
+
+			.profiles2{
+				display: inline-block;
+				width: 20%;
+				
+
+				.picture2{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.33.55%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+				
+			.profiles3{
+				display: inline-block;
+				width: 20%;
+				
+				
+				
+
+				.picture3{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.35.56%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+			.profiles4{
+				display: inline-block;
+				width: 20%;
+				
+
+				.picture4{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.40.51%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+			.profiles5{
+				display: inline-block;
+				width: 20%;
+
+				.picture5{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.43.49%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}	
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+			
+}//--end of people tag//
+
+//---------------news feed--------------------
+
+
+
+.newsfeed{
+	max-width:1000px;
+	margin:0 auto;
+
+	.news_block{
+	margin: 0 auto;
+	width:50%;
+	}
+}
+
+
+		//------------------------END PEOPLE YOU MAY KNOW------------------------
+
+
+
+
+
+}//---------------END MEDIA TAG
+
+//-----------------------------------------END BREAKPOINT 2
+
+
+
+
+
+
+
+

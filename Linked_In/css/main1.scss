@@ -375,16 +375,22 @@ body{
 	margin-top:1em;
 	overflow:hidden;
 	box-sizing:border-box;
+	min-width:600px;
 
 	.row{
 
 
-		.col{
+		.col.col-12{
+			overflow:hidden;
+			box-sizing:border-box;
 
 			.navbar{
 				margin: 0 auto;
-				float:left;
+				display: inline-block;
 				width: 25%;
+				vertical-align: top;
+				margin-top:1.35em;
+				
 
 
 
@@ -396,7 +402,7 @@ body{
 					
 
 					li{
-						display: inline-block;
+						display: block;
 						float:none;
 						width: 100%;
 
@@ -429,33 +435,38 @@ body{
 			display: inline-block;
 			box-sizing:border-box;
 			margin: 0 auto;
-			width:70%;
-			float:left;
+			width: 20%;
+			min-width: 20%;
+			margin-bottom: 1em;
+			text-align: top;
+
+			
+			
 			
 			.img_specs{
+				width:auto;
 				margin-left: 1em;
-				width:25%;
 				margin-right:0;
+				
+				overflow:hidden;
 				display: inline-block;
-				box-sizing:border-box;
 				
 				
 			}
 				
 				.user_img{
-				width:25%;
+				
 				background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%2012.42.24%20PM.png');
 				background-repeat:no-repeat;
 				background-size:contain;
 				height:10em;
-				width:100%;
 				margin: 0em;
 				margin-bottom: 1em;
+				display: inline-block;
 
 			}
 			.user_about{
-				
-				width: 25%;
+				width: auto;
 				margin-left:0;
 				display: inline-block;
 				margin-left:0.5em;
@@ -470,10 +481,11 @@ body{
 		}
 
 		.buttons{
-				width:30%;
+				display: inline-block;
 				box-sizing:border-box;
 				overflow: hidden;
-				display: inline-block;
+				width: auto;
+			
 
 				
 				.upgrade_button{
@@ -633,9 +645,11 @@ body{
 
 
 	.news_container{
-		
+		overflow: hidden;
+		box-sizing:border-box;
 
 		.news_block{
+			width: 70%;
 			margin:1em;
 			
 
@@ -649,17 +663,6 @@ body{
 		}
 
 	
-
-		.add_space{
-			float:right;
-			margin: 2em auto;
-			background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Adds.png');
-			background-repeat:no-repeat;
-			background-size:contain;
-			height:12.500em;
-			width:100%;
-			margin-bottom: 0em;
-		}
 	}
 }/////-------------closing tag for news feed------//
 
@@ -817,12 +820,34 @@ body{
 				}
 			}
 			
-
-
-			
-
 }//--end of people tag//
 
+//---------------news feed--------------------
+
+.profiles{
+	max-width:1000px;
+	margin: 1em auto;
+}
+
+.newsfeed{
+	max-width:1000px;
+	margin:0 auto;
+
+	.news_block{
+	margin: 0 auto;
+	width:50%;
+	}
+}
+.footer{
+	ul{
+		max-width: 1000px;
+		margin: 0 auto;
+
+		li{
+			margin: 0 auto;
+		}
+	}
+}
 
 		//------------------------END PEOPLE YOU MAY KNOW------------------------
 

@@ -116,7 +116,13 @@ $base-color:#212121;
 				
 
 				p{
-					
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
 				}
 			}
 
@@ -125,7 +131,13 @@ $base-color:#212121;
 				
 
 				p{
-					
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
 				}
 			}
 
@@ -135,7 +147,13 @@ $base-color:#212121;
 				
 				
 				p{
-					
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
 				}
 			}
 
@@ -145,7 +163,13 @@ $base-color:#212121;
 				
 				
 				p{
-					
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
 				}
 			}
 
@@ -155,7 +179,13 @@ $base-color:#212121;
 			
 				
 				p{
-					
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
 				}
 			}
 		}
@@ -223,7 +253,16 @@ $base-color:#212121;
 
 }/////-------------closing tag for news feed------//
 
+.footer{
+	background-color:$primary-background;
+	ul{
+		li{
+			
+			color:#ffffff;
 
+		}
+	}
+}
 
 
 
@@ -342,11 +381,13 @@ $base-color:#212121;
 				.upgrade_button{
 					background-color:#fdb81e;
 					border: 1px solid $base-color;
+					background:contain;
 
 					h3{
 
 						a{
 							color:$base-color;
+							margin:1em;
 						}
 					}
 				

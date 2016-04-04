@@ -1,3 +1,452 @@
-$primary-color: orange;
-$secondary-color: purple;
-$tertiary-color: black;
+$primary-background: #17415F;
+$secondary-background: #F7F7F7;
+$button-color:#006693;
+$section-headings:#046791;
+
+
+
+$text-primary: #0a5c87;
+$text-secondary: #ffffff;
+$text-tertiary: #aeb0b5;
+$base-color:#043f59;
+
+
+.wrapper{
+	background-color:$secondary-background;
+	.banner{
+		background-color: $primary-background;
+	
+
+		h1{
+			a{
+			color:$text-secondary;
+			}
+		}
+
+		.search_box{
+			background-color:$secondary-background;
+			
+			p{
+				color: $text-tertiary;
+			}
+		}
+	}
+
+//----------------------- NAVBAR----------------------------
+.nav_wrapper{
+	border-bottom: 1px solid $base-color;
+	.row{
+
+		.col{
+
+			.navbar{
+				
+				ul{
+					
+					li{
+
+						background-color:$button-color;
+						
+
+						h2{
+
+							a{
+								color:$text-secondary;	
+
+
+							}
+						}
+
+					}
+					li:hover{
+						background-color:$text-primary;
+					}
+
+
+				}
+
+
+
+
+			}	
+		}
+	}
+}	
+//-----------------------------PEOPLE YOU MAY KNOW------------------------
+		.people{
+
+			border-bottom: 1px solid $base-color;
+			background-color:#dce4ef;
+
+			.people_headings{
+			
+				h3:first-of-type{
+					color: $button-color;
+					
+					width: fit-content;
+					
+
+
+				
+				}
+				h3:nth-child(2){
+						
+						width: fit-content;
+
+					a{
+						text-decoration: none;
+						color:$base-color;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$secondary-background;
+				}
+
+				a:hover{
+						
+						color:$text-secondary;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$button-color;
+				}
+
+					}
+			}
+
+			.profiles1{
+				
+
+				p{
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
+				}
+			}
+
+
+			.profiles2{
+				
+
+				p{
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
+				}
+			}
+
+
+				
+			.profiles3{
+				
+				
+				p{
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
+				}
+			}
+
+
+
+			.profiles4{
+				
+				
+				p{
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
+				}
+			}
+
+
+
+			.profiles5{
+			
+				
+				p{
+					a{
+						color:#205493;
+					}
+					a:hover{
+						color:#3e94cf;
+
+					}
+				}
+			}
+		}
+//---------------------------------END PEOPLE YOU MAY KNOW---------------------
+
+}
+
+.newsfeed{
+	
+
+	.news_header{
+		h3{
+				a{
+						text-decoration: none;
+						color:$base-color;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$secondary-background;
+				}
+
+				a:hover{
+						
+						color:$text-secondary;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$button-color;
+				}
+			}
+	}
+
+
+	.news_container{
+		background-color:$secondary-background;
+		.news_block{
+
+			
+
+			h4{
+				color: $primary-background;
+				a{
+					color: $primary-background;
+
+				}
+				a:hover{
+					color:$button-color;
+				}
+				
+			}
+
+			p{
+				a{
+					color:$primary-background;
+
+				}
+				a:hover{
+					color:$section-headings;
+
+				}
+
+			}
+		}
+
+	}
+
+
+}/////-------------closing tag for news feed------//
+
+.footer{
+	background-color:$primary-background;
+	ul{
+		li{
+			
+			color:#ffffff;
+
+		}
+	}
+}
+
+
+
+
+
+ //-----------------------------END OF NEWS FEED-------------------------------------
+
+
+ //----------------------------------BEGIN BREAKPOINT 1-------------------------//
+
+
+ @media(min-width: 550px){
+		.nav_wrapper{
+			border-bottom: 1px solid $base-color;
+			.row{
+
+				.col{
+
+					.navbar{
+						
+						ul{
+
+							border: 1px solid $base-color;
+							background-color:$button-color;
+
+							li{
+								border: 1px solid $base-color;
+								
+								
+
+								h2{
+
+									a{
+										color:$text-secondary;	
+
+
+									}
+								}
+
+							}
+							li:hover{
+								background-color:$text-primary;
+							}
+
+
+						}
+
+
+
+
+					}	
+				}
+			}
+		}	
+
+
+
+		.user_profile{
+
+			
+			
+			.img_specs{
+				
+				p{
+						a{
+						color: $primary-background;
+
+
+				}
+					
+					a:hover{
+					color:$button-color;
+				}
+					}
+
+				
+			.user_img{
+					
+					
+			}
+			
+			}
+
+			.user_about{
+				
+				
+				h1{
+					a{
+						color:$primary-background;
+						text-decoration: none;
+
+					}
+					a:hover{
+						color:$button-color;
+										}
+				}
+
+				h2{
+					color:$base-color;
+					a{
+						color: $primary-background;
+						text-decoration: none;
+
+				}
+					
+					a:hover{
+					color:$button-color;
+				}
+			}
+
+
+		}
+				.buttons{
+				
+				
+				.upgrade_button{
+					background-color:#fdb81e;
+					border: 1px solid $base-color;
+					background:contain;
+
+					h3{
+
+						a{
+							color:$base-color;
+							margin:1em;
+						}
+					}
+				
+				}	
+
+				.view_profile{
+					
+					h3{
+						a{
+						text-decoration: none;
+						color:$base-color;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$secondary-background;
+				}
+
+				a:hover{
+						
+						color:$text-secondary;
+						border: 1px solid $base-color;
+						padding:0.2em;
+						background-color:$button-color;
+				}
+					}
+					
+				}
+
+			}
+
+
+	}
+ }
+
+
+//----------------------------------------END BREAK POINT 1
+
+
+
+
+
+
+
+
+
+//-----------------------------------------BEGIN BREAKPOINT 2
+
+@media(min-width: 1000px){
+
+
+
+
+
+}//---------------END MEDIA TAG
+
+//-----------------------------------------END BREAKPOINT 2
+
+
+
+
+
+
+

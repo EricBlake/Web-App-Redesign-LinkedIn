@@ -1,15 +1,355 @@
-body {
-	font-family: 'Roboto', sans-serif;
+$heading-font:'Bitter', serif;
+$paragraph-font:'Open Sans', sans-serif;
+
+
+
+
+
+.wrapper{
+
+			//---------------TOP BANNER--------------------//
+
+
+	.banner{
+		padding:0em;
+
+
+		h1{
+			font-size: 2.5em;
+			font-weight: 700;
+			line-height: 1.3em;
+			
+
+			
+			a{
+			font-family: $heading-font;
+			padding:1em;
+
+
+
+			}
+		}
+
+		.search_box{
+			p{
+				font-family: $paragraph-font;
+				line-height: 1.3em;
+				font-size: 1.25em;
+				
+			}
+		}
+	}
+
+
+	//-------------------------------- NAV BAR------------------------------//
+
+	.row{
+
+		.col{
+
+			.navbar{
+				ul{
+					
+
+					li{
+						h2{
+							font-size: 1.2em;
+							a{
+								text-decoration: none;
+								font-family: $paragraph-font;
+
+
+							}
+						}
+
+					}
+
+
+				}
+
+
+
+
+			}	
+		}
+	}
+
+
+	//--------------------------PEOPLE YOU MAY KNOW---------------------------//
+
+	.people{
+			
+				h3:first-child{
+				font-style: $heading-font;
+				font-size: 1.250em;
+				}
+				h3:nth-child(2){
+					
+				}	
+
+			.profiles1{
+				
+
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
+				}
+			}
+
+
+			.profiles2{
+				
+
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
+				}
+			}
+
+
+				
+			.profiles3{
+				
+				
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
+				}
+			}
+
+
+
+			.profiles4{
+				
+				
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
+				}
+			}
+
+
+
+			.profiles5{
+			
+				
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-size: 1.250em;
+					}
+				}
+			}
+		}
+
 }
 
-h1 {
-	font-size: 3em;
+.newsfeed{
+	
+
+	.news_header{
+		
+	}
+
+
+	.news_container{
+		.news_block{
+			
+
+			h4{
+				font-size: 1.063em;
+				line-height: 1.3em;
+				font-weight: 700;
+				font-family: $heading-font;
+				
+			}
+			p{
+				font-size: 1.063em;
+				line-height: 1.5em;
+				font-weight: 400;
+				font-family: $paragraph-font;
+			}
+		}
+
+	}
+
+
+}/////-------------closing tag for news feed------//
+
+
+
+
+
+
+
+ //-----------------------------END OF NEWS FEED-------------------------------------
+
+.footer{
+	margin: 0 auto;
+	padding: 2em;
+	ul{
+		li{
+			width:100%;
+			min-width: 100%;
+			list-style: none;
+			display: inline;
+			margin: 1.5em;
+		}
+	}
 }
 
-h2 {
-	font-size: 2.5em;
+
+
+
+
+//---------------------------------BREAKPOINT1---------------------------------------
+@media(min-width: 550px){
+		
+.col-8{
+	overflow:hidden;
+		
+		.user_profile{
+
+			
+			
+			
+			.img_specs{
+				p{
+					a{
+						text-decoration: none;
+						font-family: $paragraph-font;
+						line-height: 0em;
+
+					}
+				}
+				
+				
+			.user_img{
+
+				p{
+					font-family: $paragraph-font;
+					a{
+						text-decoration: none;
+						font-family: $paragraph-font;
+						line-height: 0.5em;
+					}
+				}
+					
+					
+			}
+			
+			}
+
+			.user_about{
+				margin-left: 0.5em;
+				h1{
+					margin-bottom: 0em;
+					a{
+						text-decoration: none;
+						font-family: $paragraph-font;
+						font-weight: 700;
+						line-height: 1em;
+					}
+				}
+				h2{
+					font-size: 1em;
+					font-family: $paragraph-font;
+					line-height: 1.3em;
+					margin-top: 0.5em;
+
+				}
+
+					p{
+						font-size: 1.063em;
+						line-height: 1.3em;
+						font-weight: 400;
+						font-family: $paragraph-font;
+					}
+					
+			}
+
+			.buttons{
+
+				
+				
+				.upgrade_button{
+					font-family: $paragraph-font;
+					font-weight: 700px;
+					text-decoration: none;
+
+					h3{
+
+						a{
+							font-family: $paragraph-font;
+							font-size: 1.250em;
+							text-align: center;
+							padding:0.2em;
+						}
+					}
+				
+				}	
+
+				.view_profile{
+					font-size: 1em;
+					text-decoration: none;
+					text-align: center;
+					padding:0.2em;
+					
+				}
+
+			}
+
+
+
+
+
+			}
+
+
+	}
 }
 
-h3 {
-	font-size: 1.5em;
-}
+//----------------------------------------END BREAK POINT 1
+
+
+
+
+
+
+
+
+
+//-----------------------------------------BEGIN BREAKPOINT 2
+
+@media(min-width: 1000px){
+
+
+
+
+
+}//---------------END MEDIA TAG
+
+//-----------------------------------------END BREAKPOINT 2
+
+
+
+
