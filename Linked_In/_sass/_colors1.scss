@@ -1,11 +1,14 @@
 $primary-background: #112e51;
 $secondary-background: #f1f1f1;
 $button-color:#0071bc;
+$section-headings:#02bfe7;
+
 
 
 $text-primary: #205493;
 $text-secondary: #ffffff;
 $text-tertiary: #aeb0b5;
+$base-color:#212121;
 
 
 .wrapper{
@@ -35,6 +38,7 @@ $text-tertiary: #aeb0b5;
 		.col{
 
 			.navbar{
+				border-bottom: 1px solid $base-color;
 				ul{
 
 					li{
@@ -43,7 +47,7 @@ $text-tertiary: #aeb0b5;
 						
 
 						h2{
-							
+
 							a{
 								color:$text-secondary;	
 
@@ -65,7 +69,83 @@ $text-tertiary: #aeb0b5;
 			}	
 		}
 	}
+//-----------------------------PEOPLE YOU MAY KNOW------------------------
+		.people{
+
+			border-bottom: 1px solid $base-color;
+
+			.people_headings{
+			
+				h3:first-of-type{
+					color: $button-color;
+					border: 1px solid $button-color;
+					width: fit-content;
+					
 
 
+				
+				}
+				h3:nth-child(2){
+						background-color:$secondary-background;
+						width: fit-content;
+
+					a{
+						text-decoration: none;
+						color:$base-color;
+						border: 1px solid $base-color;
+
+						
+				}
+					}
+			}
+
+			.profiles1{
+				
+
+				p{
+					
+				}
+			}
+
+
+			.profiles2{
+				
+
+				p{
+					
+				}
+			}
+
+
+				
+			.profiles3{
+				
+				
+				p{
+					
+				}
+			}
+
+
+
+			.profiles4{
+				
+				
+				p{
+					
+				}
+			}
+
+
+
+			.profiles5{
+			
+				
+				p{
+					
+				}
+			}
+		}
+//---------------------------------END PEOPLE YOU MAY KNOW---------------------
 
 }

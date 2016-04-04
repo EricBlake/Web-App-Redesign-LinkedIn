@@ -73,6 +73,67 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 	//--------------------------PEOPLE YOU MAY KNOW---------------------------//
 
+	.people{
+			
+				h3:first-child{
+				font-style: $heading-font;
+				font-size: 1.250em;
+				}
+				h3:nth-child(2){
+					
+				}	
 
+			.profiles1{
+				
+
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+				}
+			}
+
+
+			.profiles2{
+				
+
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+				}
+			}
+
+
+				
+			.profiles3{
+				
+				
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+				}
+			}
+
+
+
+			.profiles4{
+				
+				
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+				}
+			}
+
+
+
+			.profiles5{
+			
+				
+				p{
+					font-size: 1.063em;
+					font-family: $paragraph-font;
+				}
+			}
+		}
 
 }

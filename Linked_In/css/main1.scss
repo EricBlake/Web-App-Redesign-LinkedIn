@@ -2,10 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import 'type1',
-		'colors1';
+		'colors1',
+		'breakpoint1';
 
 $tot-width: 100%;
-$num-col: 12;
+$num-col: 12; 
 $gut-width: 2%;
 
 $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
@@ -65,6 +66,7 @@ body{
 			}
 		}
 	}
+}
 
 
 	//-----------------------------------------END OF BANNER
@@ -120,26 +122,182 @@ body{
 
 
 
-			}	
-		}
+			}	//--end of navbar tag//
+
+		}//end of col tag--//
+	}//---end of row tag--//
 //-----------------------------------------END OF NAVIGATION BAR
+
+
+
 //-----------------------------------------PEOPLE YOU MAY KNOW
-		.people{
+.people{
 			clear:both;
+			overflow: hidden;
+			padding-bottom: 2em;
 
-			:nth-child(1){
-				display: none;
+			.people_headings{
+				margin:1em;
+				h3:first-child{
+					padding:0.2em;
+					display: none;
+					
+
+				}
+				h3:nth-child(2){
+
+				}	
+
 			}
-		h3{
-			margin:1em;
-		}	
-		
-		}
 
+			.profiles1{
+				width: 50%;
+				float:left;
+
+				.picture1{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.42.13%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+					margin-top: 0em;
+				}
+			}
+
+			.profiles2{
+				width: 50%;
+				float:left;
+
+				.picture2{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.33.55%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+				
+			.profiles3{
+				max-width: 20%;
+				float:left;
+				display: none;
+				
+
+				.picture3{
+					margin: 2em auto;
+					background: url('https://github.com/EricBlake/Web-App-Redesign-LinkedIn/blob/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.35.56%20PM.png?raw=true');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+			.profiles4{
+				max-width: 20%;
+				float:left;
+				display: none;
+				
+
+				.picture4{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.40.51%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+			.profiles5{
+				max-width: 20%;
+				float:left;
+				display: none;
+
+				.picture5{
+					margin: 2em auto;
+					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.43.49%20PM.png');
+					background-repeat:no-repeat;
+					background-size:contain;
+					height:12.500em;
+					width:10em;
+					margin-bottom: 0em;
+					}	
+				
+				p{
+					text-align: center;
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+
+}//--end of people tag//
+
+
+		//------------------------END PEOPLE YOU MAY KNOW------------------------
+
+ //-----------------------------------NEWS FEED BEGIN------------------------------
+
+
+.newsfeed{
+	margin:0 auto;
+
+	.news_header{
+		margin:1em;
+	}
+
+	.news_block{
+		margin:1em;
+
+		h4{
+			margin:0 auto;
+		}
 	}
 
 
-	
+}/////-------------closing tag for news feed------//
+
+
+
+
+
+
+
+ //-----------------------------END OF NEWS FEED-------------------------------------
 
 
 
@@ -149,12 +307,4 @@ body{
 
 
 
-
-
-
-}
-
-
-@media (min-width: 500px){
-  }
 
