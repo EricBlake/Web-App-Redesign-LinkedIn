@@ -11,8 +11,11 @@ $text-tertiary: #aeb0b5;
 $base-color:#212121;
 
 
-.wrapper{
-	background-color:$secondary-background;
+
+
+//-----------------------------------------HEADER-------------------
+
+.site-header{
 	.banner{
 		background-color: $primary-background;
 	
@@ -30,7 +33,24 @@ $base-color:#212121;
 				color: $text-tertiary;
 			}
 		}
+
+
+		.search_icon{
+
+
+			a{
+				
+				color:white;
+			}
+
+		}
 	}
+
+}
+
+.wrapper{
+	background-color:$secondary-background;
+	
 
 //----------------------- NAVBAR----------------------------
 .nav_wrapper{
@@ -42,10 +62,12 @@ $base-color:#212121;
 			.navbar{
 				
 				ul{
+
 					
 					li{
 
 						background-color:$button-color;
+						border: 1px solid $base-color;
 						
 
 						h2{
@@ -82,7 +104,6 @@ $base-color:#212121;
 			
 				h3:first-of-type{
 					color: $button-color;
-					
 					width: fit-content;
 					
 
@@ -97,7 +118,7 @@ $base-color:#212121;
 						text-decoration: none;
 						color:$base-color;
 						border: 1px solid $base-color;
-						padding:0.2em;
+						
 						background-color:$secondary-background;
 				}
 
@@ -113,7 +134,17 @@ $base-color:#212121;
 			}
 
 			.profiles1{
+
+				.picture1{
+				}
 				
+				.add_logo{
+					a{
+						color:#2e8540;
+					}
+						
+				}
+
 
 				p{
 					a{
@@ -129,6 +160,17 @@ $base-color:#212121;
 
 			.profiles2{
 				
+				.picture2{
+				}
+
+				.add_logo{
+					a{
+						color:#2e8540;
+					}
+						
+				}
+
+
 
 				p{
 					a{
@@ -145,6 +187,18 @@ $base-color:#212121;
 				
 			.profiles3{
 				
+				.picture3{
+				}
+				.add_logo{
+					a{
+						color:#2e8540;
+					}
+						
+				}
+
+
+
+
 				
 				p{
 					a{
@@ -161,6 +215,16 @@ $base-color:#212121;
 
 			.profiles4{
 				
+				.picture4{
+				}
+				.add_logo{
+					a{
+						color:#2e8540;
+					}
+						
+				}
+
+
 				
 				p{
 					a{
@@ -176,7 +240,18 @@ $base-color:#212121;
 
 
 			.profiles5{
-			
+				
+				.picture5{
+					
+				}
+					.add_logo{
+					a{
+						color:#2e8540;
+					}
+						
+				}
+
+
 				
 				p{
 					a{
@@ -275,7 +350,7 @@ $base-color:#212121;
  //----------------------------------BEGIN BREAKPOINT 1-------------------------//
 
 
- @media(min-width: 550px){
+ @media(min-width: 650px){
 		.nav_wrapper{
 			border-bottom: 1px solid $base-color;
 			.row{

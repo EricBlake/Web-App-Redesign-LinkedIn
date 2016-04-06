@@ -1,28 +1,16 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@import 'type1',
-		'colors1';
-	
-
-$tot-width: 100%;
-$num-col: 12; 
-$gut-width: 2%;
-
-$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
-
-@mixin grid($bleezy){
-  width: ($bleezy * $ind-col-width) + ($gut-width * ($bleezy - 1));
-  float:left;
-  margin-right: $gut-width;
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
 
 
 
+
+// -------------------------BREAKPOINT 1--------------------------------------------
+
+
+
+
+@media(min-width: 650px){
+		
+//------------------------------------------BEGGING OF NAVIGATION BAR
 
 .site-header{
 		//------------------------------TOP BANNER INCLUDING LOGO AND SEARCH BAR
@@ -34,103 +22,97 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 		width:100%;
 
 		.logo {
-			padding: 0;
-			display: inline-block;
-			margin: .5em 2em .4em 1em;
+			
 
 		img {
-			width: 3em;
+			
 		}
 	}
 
 		
-	//-----------------------------SEARCH BOX TO BE USED AT SECOND BREAK POINT------------------
+	//-----------------------------SEARCH BOX BEING USED AT SECOND BREAK POINT------------------
 		.search_box{
-			display: none;
-			float:right;
-			width:30%;
-			margin:1em;
-			margin-top:1.75em;
+			display:inline-block;
+			
 
 			p{
-				text-align:right;
-				margin: .5em;
+				
 			}
 		}
 		.search_icon{
-			display: inline;
-			float:right;
-
-			margin: 0.5em 1em;
+			display: none;
+			
 
 			
 
 		}
-
 	}
 
 }
 
-	//---------------------------------SEARCH BOX END----------------------------------
-
-		
 
 
 
 
 
-.wrapper{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav_wrapper{
+	margin: 0 auto;
+	margin-top:1em;
 	overflow:hidden;
-
-
-}
-
-
-	//-----------------------------------------END OF BANNER
-
-
-
-	//------------------------------------------BEGGING OF NAVIGATION BAR
+	box-sizing:border-box;
+	min-width:650px;
 
 	.row{
 
 
-		
+		.col.col-12{
+			overflow:hidden;
+			box-sizing:border-box;
 
 			.navbar{
 				margin: 0 auto;
-				box-sizing:border-box;
-				overflow: hidden;
-				
+				display: inline-block;
+				width: 25%;
+				vertical-align: top;
+				margin-top:1.35em;
 				
 
 
+
+				
 				ul{
-					list-style:none;
-					margin: 0 auto;
-					padding: 0em;
-					
-					
+					box-sizing:border-box;
+					margin-bottom:1em;
 
 					
 
 					li{
-						display: inline-block;
-						width:50%;
-						float:left;
-						overflow: hidden;
-						box-sizing:border-box;
-						
+						display: block;
+						float:none;
+						width: 100%;
 
-
-						
+		
 
 						h2{
-							text-align: center;
+							text-align:left;
 
 							a{
 								text-decoration: none;
-
+								margin-left:0.5em;
 								
 								
 							}
@@ -143,39 +125,114 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 			}	//--end of navbar tag//
 
+		}//end of col tag--//
 	
-
+		
 
 		.user_profile{
 			overflow: hidden;
-			display:none;
+			display: inline-block;
+			box-sizing:border-box;
+			margin: 0 auto;
+			width: 20%;
+			min-width: 20%;
+			margin-bottom: 1em;
+			text-align: top;
+
+			
+			
 			
 			.img_specs{
-			.user_img{
-					float:left;
-					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%2012.42.24%20PM.png');
-					background-repeat:no-repeat;
-					background-size:contain;
-					height:12.500em;
-					width:10em;
-					margin-bottom: 0em;
+				width:auto;
+				margin-left: 1em;
+				margin-right:0;
+				
+				overflow:hidden;
+				display: inline-block;
+				
+				
 			}
-			}
+				
+				.user_img{
+				
+				background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%2012.42.24%20PM.png');
+				background-repeat:no-repeat;
+				background-size:contain;
+				height:10em;
+				margin: 0em;
+				margin-bottom: 1em;
+				display: inline-block;
 
+			}
 			.user_about{
-				float:left;
+				width: auto;
+				margin-left:0;
+				display: inline-block;
+				margin-left:0.5em;
+				box-sizing:border-box;
+
+				h1{
+					
+						margin-bottom: 0em;
+					
+				}
+				h2{
+					margin-top: 0.2em;
+				}
+
 
 			}
+
+			
 
 
 		}
 
+		.buttons{
+				display: inline-block;
+				box-sizing:border-box;
+				overflow: hidden;
+				width: auto;
+			
+
+				
+				.upgrade_button{
+					float:right;
+				
+				
+
+					h3{
+						a{
+							text-decoration: none;
+						}
+					}
+				
+				}	
+
+				.view_profile{
+					clear:both;
+					text-decoration: none;
+					float:right;
+
+					h3{
+						a{
+							text-decoration: none;
+						}
+					}
+				}
+
+			}
+
+		
+
 
 
 	}//---end of row tag--//
+
+} ///-------------------------end of nav wrapper
+
+
 //-----------------------------------------END OF NAVIGATION BAR
-
-
 
 //-----------------------------------------PEOPLE YOU MAY KNOW
 .people{
@@ -187,27 +244,26 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 				margin:1em;
 				h3:first-child{
 					padding:0.2em;
-					display: none;
+					display: inline-block;
+					
 					
 
 				}
 				h3:nth-child(2){
-
+					float:right;
 					
 				}	
 
 			}
 
-
 		.profiles{
-			height:20em;
+			height:25em;
 			overflow: scroll;
 			direction:rtl;
 
 			.profiles1{
-				width: 50%;
+				width:33%;
 				float:left;
-				min-height: 425px;
 
 				.picture1{
 					margin: 2em auto;
@@ -219,13 +275,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 					margin-bottom: 0em;
 					}
 
-					.add_logo{
-						width: 1em;
-						margin: 0 auto;
-						}
-
-					
-
 				p{
 					text-align: center;
 					width: 60%;
@@ -235,9 +284,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 			}
 
 			.profiles2{
-				width: 50%;
 				float:left;
-				min-height: 425px;
+				width: 33%;
+				
+				
 
 				.picture2{
 					margin: 2em auto;
@@ -249,12 +299,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 					margin-bottom: 0em;
 					}
 
-					.add_logo{
-						width: 1em;
-						margin: 0 auto;
-						}
-
-
 				p{
 					text-align: center;
 					width: 60%;
@@ -264,10 +308,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 				
 			.profiles3{
-				
 				float:left;
-				width: 50%;
-				min-height: 425px;
+				width: 33%;
+				
+				
 				
 				
 
@@ -280,11 +324,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 					width:10em;
 					margin-bottom: 0em;
 					}
-					
-					.add_logo{
-						width: 1em;
-						margin: 0 auto;
-						}
 				
 				p{
 					text-align: center;
@@ -292,13 +331,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 					margin: 0 auto;
 				}
 			}
-
-
 			.profiles4{
-				
 				float:left;
-				width: 50%;
-				min-height: 425px;
+				width: 33%;
 				
 
 				.picture4{
@@ -326,10 +361,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 
 			.profiles5{
-				
 				float:left;
-				width: 50%;
-				min-height: 425px;
+				width: 33%;
 
 				.picture5{
 					margin: 2em auto;
@@ -354,58 +387,40 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 				}
 			}
 
-			.profiles6{
-				
-				float:left;
-				width: 50%;
-				min-height: 425px;
+		}
 
-				.picture6{
-					margin: 2em auto;
-					background: url('https://raw.githubusercontent.com/EricBlake/Web-App-Redesign-LinkedIn/master/Research/Photos/Screen%20Shot%202016-04-01%20at%203.43.49%20PM.png');
-					background-repeat:no-repeat;
-					background-size:contain;
-					height:12.500em;
-					width:10em;
-					margin-bottom: 0em;
 
-					}	
-					
-					.add_logo{
-						width: 1em;
-						margin: 0 auto;
-						}
-				
-				p{
-					text-align: center;
-					width: 60%;
-					margin: 0 auto;
-				}
-			}
+			
 
-		}//--end of profiles tag//
 }//--end of people tag//
 
 
 		//------------------------END PEOPLE YOU MAY KNOW------------------------
 
- //-----------------------------------NEWS FEED BEGIN------------------------------
+
+//-----------------------------------NEWS FEED BEGIN------------------------------
 
 
 .newsfeed{
-	margin:0 auto;
+	margin:1em;
+	
+	overflow:hidden;
 
 	.news_header{
 		margin:1em;
 		padding-bottom:1em;
+		float:right;
 	}
 
 
 	.news_container{
-		
+		overflow: hidden;
+		box-sizing:border-box;
 
 		.news_block{
+			width: 70%;
 			margin:1em;
+			
 
 			h4{
 				margin:0 auto;
@@ -416,11 +431,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 			}
 		}
 
-	}//--------------CLOSING TAG FOR CLASS=PROFILES
-
-
+	
+	}
 }/////-------------closing tag for news feed------//
 
 
- //-----------------------------END OF NEWS FEED-------------------------------------
-@import 'breakpoint1';
+
+
+}//----------------END MEDIA QUIRY TAG
+//----------------------------------------END BREAK POINT 1

@@ -4,15 +4,16 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
 
-
-.wrapper{
-
-			//---------------TOP BANNER--------------------//
-
-
+.site-header{
 	.banner{
 		padding:0em;
+			a{
+			font-family: $heading-font;
+			padding:1em;
 
+
+
+			}
 
 		h1{
 			font-size: 2.5em;
@@ -25,8 +26,6 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 			font-family: $heading-font;
 			padding:1em;
 
-
-
 			}
 		}
 
@@ -38,7 +37,27 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				
 			}
 		}
+
+		.search_icon{
+			
+			font-size: 1.563em;
+
+			a{
+				text-decoration: none;
+				
+			}
+
+		}
 	}
+}
+
+
+.wrapper{
+
+			//---------------TOP BANNER--------------------//
+
+
+	
 
 
 	//-------------------------------- NAV BAR------------------------------//
@@ -88,6 +107,13 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 				}	
 
 			.profiles1{
+
+				.picture1{
+					
+				}
+				.add_logo{
+						font-size: 1.5em;
+						}
 				
 
 				p{
@@ -103,7 +129,14 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
 			.profiles2{
-				
+				.picture2{
+					
+				}
+
+				.add_logo{
+						font-size: 1.5em;
+						}
+
 
 				p{
 					font-size: 1.063em;
@@ -118,7 +151,14 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 				
 			.profiles3{
-				
+				.picture3{
+					
+				}
+
+				.add_logo{
+						font-size: 1.5em;
+						}
+
 				
 				p{
 					font-size: 1.063em;
@@ -133,7 +173,12 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
 			.profiles4{
-				
+				.picture4{
+				}
+
+				.add_logo{
+						font-size: 1.5em;
+						}
 				
 				p{
 					font-size: 1.063em;
@@ -148,7 +193,13 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
 			.profiles5{
-			
+				.picture5{
+				}
+
+				.add_logo{
+						font-size: 1.5em;
+						}
+
 				
 				p{
 					font-size: 1.063em;
@@ -229,7 +280,7 @@ $paragraph-font: 'Source Sans Pro', sans-serif;
 
 
 //---------------------------------BREAKPOINT1---------------------------------------
-@media(min-width: 550px){
+@media(min-width: 650px){
 		
 .col-8{
 	overflow:hidden;
